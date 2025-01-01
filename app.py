@@ -32,7 +32,7 @@ for out in outs:
             h = int(detection[3] * height)
             x = int(center_x - w / 2)
             y = int(center_y - h / 2)
-            
+            print('\n')
             boxes.append([x, y, w, h])
             confidences.append(float(confidence))
             class_ids.append(class_id)
